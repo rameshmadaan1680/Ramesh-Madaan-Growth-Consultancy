@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Ramesh Madaan - Sales Transformation & GTM Advisory</title>
+  <meta name="description" content="Specialized B2B consulting services: Sales Transformation, Go-To-Market & Channel Expansion, and Executive Capability Coaching for MSME founders." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cabinet+Grotesk:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN with Custom Extended Palette -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              50: '#f0f5ff',
+              100: '#e0ebfe',
+              200: '#bad3fc',
+              800: '#1e3a8a',
+              900: '#0f172a',
+              950: '#0a0f1d',
+            },
+            gold: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            display: ['"Cabinet Grotesk"', '"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <header id="main-header" class="header-glass fixed top-0 left-0 right-0 z-50 py-4 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Zone 1: Single Brand Wordmark -->
+      <a href="./index.html" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-navy-800 rounded-sm">
+        <div class="w-10 h-10 rounded-lg bg-navy-900 text-amber-500 font-display font-extrabold text-xl flex items-center justify-center shadow-md border border-navy-800 group-hover:border-amber-500 transition-colors">
+          RM
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-bold tracking-tight text-navy-900 group-hover:text-navy-800 transition-colors">
+            Ramesh Madaan
+          </span>
+          <span class="text-[11px] font-medium text-slate-500 tracking-wide uppercase">
+            Growth & Sales Transformation
+          </span>
+        </div>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="./index.html" class="hover:text-navy-900 transition-colors pb-0.5">Home</a>
+        <a href="./about.html" class="hover:text-navy-900 transition-colors pb-0.5">About</a>
+        <a href="./services.html" class="text-navy-900 border-b-2 border-amber-600 pb-0.5">Services</a>
+        <a href="./index.html#track-record" class="hover:text-navy-900 transition-colors pb-0.5">Track Record</a>
+        <a href="./index.html#growth-assessment" class="hover:text-navy-900 transition-colors pb-0.5">Assessment</a>
+        <a href="./contact.html" class="hover:text-navy-900 transition-colors pb-0.5">Contact</a>
+      </nav>
+
+      <!-- Zone 3: CTA & Mobile Trigger -->
+      <div class="flex items-center gap-3">
+        <a href="./contact.html" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs sm:text-sm font-bold tracking-wide text-white bg-navy-900 hover:bg-navy-800 rounded-lg border border-navy-950 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 whitespace-nowrap">
+          Schedule Consultation
+        </a>
+
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false" class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-navy-800">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden pt-4 pb-3 border-t border-slate-200 mt-3 px-2 bg-white/95 rounded-b-2xl shadow-xl">
+      <div class="flex flex-col space-y-3 font-medium text-slate-700">
+        <a href="./index.html" class="px-3 py-2 hover:bg-slate-50 rounded-lg transition-colors">Home</a>
+        <a href="./about.html" class="px-3 py-2 hover:bg-slate-50 rounded-lg transition-colors">About Ramesh</a>
+        <a href="./services.html" class="px-3 py-2 text-navy-900 font-semibold bg-slate-50 rounded-lg">Consulting Services</a>
+        <a href="./index.html#track-record" class="px-3 py-2 hover:bg-slate-50 rounded-lg transition-colors">Track Record & Metrics</a>
+        <a href="./contact.html" class="px-3 py-2 hover:bg-slate-50 rounded-lg transition-colors">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24 sm:pt-28">
+
+    <!-- ========================================================================
+         PAGE HEADER
+         ======================================================================== -->
+    <section class="py-16 sm:py-20 bg-gradient-to-b from-slate-50 to-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 text-center space-y-4">
+        <div class="inline-flex items-center gap-2 text-xs font-bold text-amber-600 uppercase tracking-widest">
+          <span>Enterprise Growth Blueprints</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-display font-extrabold text-navy-950 tracking-tight text-balance">
+          Strategic Advisory & Sales Transformation
+        </h1>
+        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed text-balance">
+          Tailored consulting frameworks designed to solve specific revenue constraints, expand distribution networks, and institutionalize sales governance.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         THREE CORE SERVICES (Detailed Card Grid with Lift Effects)
+         ======================================================================== -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
+        
+        <!-- Service 1: Sales Transformation Consulting -->
+        <div id="sales-transformation" class="card-hover rounded-2xl border border-slate-200 p-8 sm:p-12 bg-white shadow-sm scroll-mt-32">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <div class="lg:col-span-5 space-y-4">
+              <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Service 01</span>
+              <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-navy-950">
+                Sales Transformation Consulting
+              </h2>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Most sales teams operate like passive dispatch clerks rather than aggressive commercial hunters. We dismantle obsolete practices and rebuild the entire revenue architecture from the ground up.
+              </p>
+              
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-700 space-y-1">
+                <span class="font-bold text-navy-900 block">Typical Client State Before:</span>
+                <p>Unpredictable pipeline, sales reps resisting CRM updates, low deal closure rates, and compensation disconnected from gross margins.</p>
+              </div>
+
+              <div class="pt-2">
+                <a href="./contact.html?strategy=Sales%20Transformation%20Consulting" class="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-bold text-white bg-navy-900 hover:bg-navy-800 rounded-lg shadow-sm transition-all">
+                  <span>Inquire About Sales Transformation</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7 bg-slate-50/80 rounded-xl p-6 sm:p-8 border border-slate-200/80 space-y-6">
+              <h3 class="text-sm font-bold uppercase tracking-wider text-navy-950">Key Transformation Deliverables:</h3>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
+                <div class="p-4 rounded-lg bg-white border border-slate-200 space-y-1">
+                  <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>Org Structure & Hierarchy</span>
+                  </h4>
+                  <p class="text-slate-500 leading-relaxed">Redesigning span of control, field territory assignments, and reporting tiers for maximum market coverage.</p>
+                </div>
+
+                <div class="p-4 rounded-lg bg-white border border-slate-200 space-y-1">
+                  <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>Incentive & Bonus Mapping</span>
+                  </h4>
+                  <p class="text-slate-500 leading-relaxed">Aligning sales bonuses with profitability, secondary clearances, and prompt receivables collections rather than top-line vanity.</p>
+                </div>
+
+                <div class="p-4 rounded-lg bg-white border border-slate-200 space-y-1">
+                  <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>CRM & Pipeline Discipline</span>
+                  </h4>
+                  <p class="text-slate-500 leading-relaxed">Deploying lightweight, field-friendly CRM protocols that reps actually adopt, providing real-time visibility into weekly funnel stages.</p>
+                </div>
+
+                <div class="p-4 rounded-lg bg-white border border-slate-200 space-y-1">
+                  <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>Weekly Governance Rhythm</span>
+                  </h4>
+                  <p class="text-slate-500 leading-relaxed">Instituting structured review meeting formats that replace defensive excuses with forward-looking deal advancement actions.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Service 2: Go-To-Market & Channel Expansion -->
+        <div id="channel-expansion" class="card-hover rounded-2xl border border-slate-200 p-8 sm:p-12 bg-white shadow-sm scroll-mt-32">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <div class="lg:col-span-5 space-y-4">
+              <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Service 02</span>
+              <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-navy-950">
+                Go-To-Market & Channel Expansion
+              </h2>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Replicating regional success into PAN-India distribution dominance. We architect sustainable dealer-distributor networks, optimize territory margins, and guide contract manufacturers to launch their own profitable brand verticals.
+              </p>
+              
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-700 space-y-1">
+                <span class="font-bold text-navy-900 block">Typical Client State Before:</span>
+                <p>High geographic dependency on a single home state, slow distributor payment rotations, lack of secondary sales pull, and fear of high expansion capex.</p>
+              </div>
+
+              <div class="pt-2">
+                <a href="./contact.html?strategy=Go-To-Market%20%26%20Channel%20Expansion" class="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-bold text-white bg-navy-900 hover:bg-navy-800 rounded-lg shadow-sm transition-all">
+                  <span>Inquire About Channel Expansion</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7 bg-slate-50/80 rounded-xl p-6 sm:p-8 border border-slate-200/80 space-y-6">
+              <h3 class="text-sm font-bold uppercase tracking-wider text-navy-950">Key Transformation Deliverables:</h3>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
+                <div class="p-4 rounded-lg bg-white border border-slate-200 space-y-1">
+                  <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>Tier-1 Distributor Acquisition</span>
+                  </h4>
+                  <p class="text-slate-500 leading-relaxed">Identifying and onboarding influential regional distribution partners with existing retail trade networks.</p>
+                </div>
+
+                <div class="p-4 rounded-lg bg-white border border-slate-200 space-y-1">
+                  <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>Margin & Credit Governance</span>
+                  </h4>
+                  <p class="text-slate-500 leading-relaxed">Designing sustainable trade discount slabs, early payment cash discounts, and disciplined collection security terms.</p>
+                </div>
+
+                <div class="p-4 rounded-lg bg-white border border-slate-200 space-y-1">
+                  <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>Retail to Industrial Pivot</span>
+                  </h4>
+                  <p class="text-slate-500 leading-relaxed">Building enterprise B2B sales capabilities to win institutional contracts, government tenders, and major OEM partnerships.</p>
+                </div>
+
+                <div class="p-4 rounded-lg bg-white border border-slate-200 space-y-1">
+                  <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>Market Penetration Playbooks</span>
+                  </h4>
+                  <p class="text-slate-500 leading-relaxed">Deploying the exact 29% market share formula applied during Ramesh's Crompton Greaves turnaround in contested sectors.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Service 3: Leadership & Capability Coaching -->
+        <div id="executive-coaching" class="card-hover rounded-2xl border border-slate-200 p-8 sm:p-12 bg-white shadow-sm scroll-mt-32">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <div class="lg:col-span-5 space-y-4">
+              <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Service 03</span>
+              <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-navy-950">
+                Leadership & Capability Coaching
+              </h2>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Transforming MSME promoters and Managing Directors from operational firefighters into strategic corporate captains. We help you decouple from day-to-day sales deals and groom second-tier executives.
+              </p>
+              
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-700 space-y-1">
+                <span class="font-bold text-navy-900 block">Typical Client State Before:</span>
+                <p>Founder working 14 hours a day, unable to take holidays, micromanaging customer complaints, and bottlenecking all final commercial decisions.</p>
+              </div>
+
+              <div class="pt-2">
+                <a href="./contact.html?strategy=Leadership%20%26%20Capability%20Coaching" class="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-bold text-white bg-navy-900 hover:bg-navy-800 rounded-lg shadow-sm transition-all">
+                  <span>Inquire About Capability Coaching</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7 bg-slate-50/80 rounded-xl p-6 sm:p-8 border border-slate-200/80 space-y-6">
+              <h3 class="text-sm font-bold uppercase tracking-wider text-navy-950">Key Transformation Deliverables:</h3>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
+                <div class="p-4 rounded-lg bg-white border border-slate-200 space-y-1">
+                  <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>Founder Decoupling Roadmap</span>
+                  </h4>
+                  <p class="text-slate-500 leading-relaxed">Codifying the founder's tacit deal-making instincts into institutional sales playbooks that senior reps can execute independently.</p>
+                </div>
+
+                <div class="p-4 rounded-lg bg-white border border-slate-200 space-y-1">
+                  <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>Head of Sales Hiring & Mentoring</span>
+                  </h4>
+                  <p class="text-slate-500 leading-relaxed">Assisting in screening, interviewing, and actively mentoring your incoming Chief Commercial Officer or VP of Sales.</p>
+                </div>
+
+                <div class="p-4 rounded-lg bg-white border border-slate-200 space-y-1">
+                  <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>Boardroom Strategy & P&L Mastery</span>
+                  </h4>
+                  <p class="text-slate-500 leading-relaxed">Training emerging CXOs on unit economics, gross contribution margins, working capital optimization, and investor presentations.</p>
+                </div>
+
+                <div class="p-4 rounded-lg bg-white border border-slate-200 space-y-1">
+                  <h4 class="font-bold text-navy-900 flex items-center gap-2">
+                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <span>High-Stakes Negotiation Skills</span>
+                  </h4>
+                  <p class="text-slate-500 leading-relaxed">Executive coaching on closing multi-crore institutional tenders without resorting to profit-destroying price slashing.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         THE 4-STAGE TRANSFORMATION METHODOLOGY
+         ======================================================================== -->
+    <section class="py-20 bg-slate-50 border-t border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        
+        <div class="text-center space-y-3 mb-16 max-w-2xl mx-auto">
+          <p class="text-xs font-bold uppercase tracking-widest text-amber-600">Execution Framework</p>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-navy-950">
+            The 4-Stage Engagement Architecture
+          </h2>
+          <p class="text-slate-600 text-sm">
+            How we translate high-level growth strategy into sustainable weekly execution discipline.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          
+          <div class="bg-white p-6 rounded-xl border border-slate-200 space-y-3">
+            <span class="text-xs font-bold text-amber-600 uppercase">Phase 01 · Weeks 1-4</span>
+            <h3 class="text-lg font-bold text-navy-950">Diagnostic Audit</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Deep-dive examination of historical sales data, customer concentration risk, dealer margin parity, and field sales capacity.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl border border-slate-200 space-y-3">
+            <span class="text-xs font-bold text-amber-600 uppercase">Phase 02 · Month 2</span>
+            <h3 class="text-lg font-bold text-navy-950">GTM Architecture</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Design of revised KPI matrices, margin-linked sales compensation, distributor onboarding contracts, and territory maps.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl border border-slate-200 space-y-3">
+            <span class="text-xs font-bold text-amber-600 uppercase">Phase 03 · Months 3-6</span>
+            <h3 class="text-lg font-bold text-navy-950">Execution Cadence</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Active co-leadership of weekly sales reviews, territory pilot rollouts, consultative sales training, and dealer meets.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl border border-slate-200 space-y-3">
+            <span class="text-xs font-bold text-amber-600 uppercase">Phase 04 · Months 7-12</span>
+            <h3 class="text-lg font-bold text-navy-950">Institutional Scale</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Decoupling leadership from routine sales, embedding governance reporting dashboards, and sustaining predictable CAGR.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         ENGAGEMENT CALL TO ACTION
+         ======================================================================== -->
+    <section class="py-16 bg-navy-950 text-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center space-y-6">
+        <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white">
+          Let's Identify Your Biggest Revenue Lever
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+          Book a 30-minute discovery call directly with Ramesh Madaan to evaluate your business bottlenecks and determine engagement fit.
+        </p>
+        <div class="pt-2">
+          <a href="./contact.html" class="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white bg-amber-600 hover:bg-amber-700 rounded-xl shadow-lg transition-all hover:-translate-y-0.5">
+            <span>Schedule Diagnostic Discovery</span>
+            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="bg-navy-950 text-slate-400 border-t border-slate-800 py-16 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+        
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-navy-900 text-amber-500 font-display font-extrabold text-lg flex items-center justify-center border border-navy-800">
+              RM
+            </div>
+            <span class="text-lg font-bold text-white tracking-tight">Ramesh Madaan</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            High-impact growth advisory, sales transformation, and executive coaching for MSMEs and enterprise leaders across India.
+          </p>
+          <div class="text-xs text-amber-400/90 font-medium">
+            Alumnus, Indian Institute of Management (IIM) Lucknow
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200">Consultancy Architecture</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="./about.html" class="hover:text-white transition-colors">Executive Bio & Track Record</a></li>
+            <li><a href="./services.html#sales-transformation" class="text-white font-medium">Sales Transformation Consulting</a></li>
+            <li><a href="./services.html#channel-expansion" class="text-white font-medium">Go-To-Market & Channel Expansion</a></li>
+            <li><a href="./services.html#executive-coaching" class="text-white font-medium">Leadership & Capability Coaching</a></li>
+            <li><a href="./index.html#growth-assessment" class="hover:text-white transition-colors">Sales Performance Gap Calculator</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200">Contact Ramesh Madaan</h4>
+          <p class="text-xs leading-relaxed">
+            Direct Email: <a href="mailto:ramesh.madaan@yahoo.com" class="text-white hover:text-amber-400 font-medium transition-colors">ramesh.madaan@yahoo.com</a><br />
+            Direct Phone: <a href="tel:+919780022101" class="text-white hover:text-amber-400 font-medium transition-colors">+91 97800 22101</a><br />
+            LinkedIn: <a href="https://linkedin.com/in/rameshmadaan" target="_blank" rel="noopener noreferrer" class="text-white hover:text-amber-400 font-medium transition-colors">linkedin.com/in/rameshmadaan</a>
+          </p>
+          <p class="text-[11px] text-slate-500">
+            Offices & Engagement Hub: Chandigarh & Delhi NCR, India.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© 2026 Ramesh Madaan. All rights reserved. Strategic Business Consulting.</p>
+        <p>Built for elite MSME & mid-market enterprise acceleration.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>

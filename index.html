@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramesh Madaan | Growth Strategist & Sales Transformation Consultant</title>
+  <meta name="description" content="Transforming MSMEs and mid-market enterprises through execution-focused sales engines, robust Go-To-Market strategies, and elite capability coaching. Backed by 30+ years of leadership and IIM Lucknow pedigree." />
+  
+  <!-- OpenGraph / Social Metadata -->
+  <meta property="og:title" content="Ramesh Madaan | Growth Strategist & Sales Transformation Consultant" />
+  <meta property="og:description" content="Scalable Sales. Predictable Revenue. Self-Running Systems. Enterprise leadership consulting for ambitious founders and MDs." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cabinet+Grotesk:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN with Custom Extended Palette -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              50: '#f0f5ff',
+              100: '#e0ebfe',
+              200: '#bad3fc',
+              800: '#1e3a8a',
+              900: '#0f172a',
+              950: '#0a0f1d',
+            },
+            gold: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            display: ['"Cabinet Grotesk"', '"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR (Strict 3-Zone Contract)
+       ======================================================================== -->
+  <header id="main-header" class="header-glass fixed top-0 left-0 right-0 z-50 py-4 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Zone 1: Single text element Brand Wordmark -->
+      <a href="./index.html" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-navy-800 rounded-sm">
+        <div class="w-10 h-10 rounded-lg bg-navy-900 text-amber-500 font-display font-extrabold text-xl flex items-center justify-center shadow-md border border-navy-800 group-hover:border-amber-500 transition-colors">
+          RM
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-bold tracking-tight text-navy-900 group-hover:text-navy-800 transition-colors">
+            Ramesh Madaan
+          </span>
+          <span class="text-[11px] font-medium text-slate-500 tracking-wide uppercase">
+            Growth & Sales Transformation
+          </span>
+        </div>
+      </a>
+
+      <!-- Zone 2: 4-5 Clean Text Nav Links with subtle hover effect -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="./index.html" class="text-navy-900 border-b-2 border-amber-600 pb-0.5">Home</a>
+        <a href="./about.html" class="hover:text-navy-900 transition-colors pb-0.5">About</a>
+        <a href="./services.html" class="hover:text-navy-900 transition-colors pb-0.5">Services</a>
+        <a href="#track-record" class="hover:text-navy-900 transition-colors pb-0.5">Track Record</a>
+        <a href="#growth-assessment" class="hover:text-navy-900 transition-colors pb-0.5">Assessment</a>
+        <a href="./contact.html" class="hover:text-navy-900 transition-colors pb-0.5">Contact</a>
+      </nav>
+
+      <!-- Zone 3: Primary Action CTA & Mobile Trigger -->
+      <div class="flex items-center gap-3">
+        <a href="./contact.html" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs sm:text-sm font-bold tracking-wide text-white bg-navy-900 hover:bg-navy-800 rounded-lg border border-navy-950 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 whitespace-nowrap">
+          Schedule Consultation
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false" class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-navy-800">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden pt-4 pb-3 border-t border-slate-200 mt-3 px-2 bg-white/95 rounded-b-2xl shadow-xl">
+      <div class="flex flex-col space-y-3 font-medium text-slate-700">
+        <a href="./index.html" class="px-3 py-2 text-navy-900 font-semibold bg-slate-50 rounded-lg">Home</a>
+        <a href="./about.html" class="px-3 py-2 hover:bg-slate-50 rounded-lg transition-colors">About Ramesh</a>
+        <a href="./services.html" class="px-3 py-2 hover:bg-slate-50 rounded-lg transition-colors">Consulting Services</a>
+        <a href="#track-record" class="px-3 py-2 hover:bg-slate-50 rounded-lg transition-colors">Track Record & Case Studies</a>
+        <a href="#growth-assessment" class="px-3 py-2 hover:bg-slate-50 rounded-lg transition-colors">Growth Gap Assessment</a>
+        <a href="./contact.html" class="px-3 py-2 hover:bg-slate-50 rounded-lg transition-colors">Get in Touch</a>
+        <div class="pt-2">
+          <a href="./contact.html" class="w-full inline-flex items-center justify-center px-4 py-2.5 text-sm font-bold text-white bg-navy-900 rounded-lg shadow">
+            Schedule Strategic Call
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24 sm:pt-28">
+
+    <!-- ========================================================================
+         HERO SECTION: Authority, Value Proposition & Immediate Hook
+         ======================================================================== -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50/50 py-16 sm:py-24 border-b border-slate-200/80">
+      <!-- Background subtle grid accent -->
+      <div class="absolute inset-0 dot-pattern opacity-40 pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column: High-Impact Headline & Positioning -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Quiet Editorial Trust Eyebrow (No Pills) -->
+            <div class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-navy-800 tracking-wide">
+              <span>B2B Growth Advisory</span>
+              <span aria-hidden="true" class="text-amber-500 font-bold">·</span>
+              <span>Sales Transformation</span>
+              <span aria-hidden="true" class="text-amber-500 font-bold">·</span>
+              <span>IIM Lucknow Alumnus</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-navy-950 tracking-tight leading-[1.1] text-balance">
+              Scalable Sales. <br class="hidden sm:inline" />
+              Predictable Revenue. <br />
+              <span class="text-navy-800 underline decoration-amber-500 decoration-wavy decoration-2 underline-offset-8">Self-Running Systems.</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed text-balance">
+              Transforming MSMEs and mid-market enterprises through execution-focused sales engines, robust Go-To-Market distribution strategies, and elite capability coaching.
+            </p>
+
+            <!-- CTA Actions -->
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="#growth-assessment" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-bold text-white bg-amber-600 hover:bg-amber-700 active:bg-amber-800 rounded-xl shadow-lg shadow-amber-600/20 transition-all hover:-translate-y-0.5 whitespace-nowrap">
+                <span>Begin Growth Assessment</span>
+                <i data-lucide="arrow-down-right" class="w-5 h-5"></i>
+              </a>
+
+              <a href="./services.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-bold text-navy-900 bg-white hover:bg-slate-100 border border-slate-300 rounded-xl transition-all hover:border-slate-400 whitespace-nowrap">
+                <span>Explore Services</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+
+            <!-- Trust Markers Inline -->
+            <div class="pt-6 border-t border-slate-200/90 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-500">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+                <span class="font-medium text-slate-700">30+ Years Leadership</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+                <span class="font-medium text-slate-700">PAN-India Channel Scale</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+                <span class="font-medium text-slate-700">Zero Founder-Dependency</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Executive Anchor Card -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="w-full max-w-md bg-white border border-slate-200 rounded-2xl p-6 shadow-xl relative">
+              
+              <!-- Subtle decorative corner accent -->
+              <div class="absolute -top-3 -right-3 w-16 h-16 bg-amber-100/70 rounded-full blur-xl pointer-events-none"></div>
+
+              <!-- Executive Visual Box -->
+              <div class="executive-frame aspect-[4/3] w-full rounded-xl flex flex-col justify-end p-6 text-white relative">
+                <!-- SVG Monogram / Architectural Geometry -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-navy-950 via-navy-900 to-navy-800 opacity-95"></div>
+                <div class="absolute inset-0 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:16px_16px] opacity-15"></div>
+                
+                <div class="relative z-10">
+                  <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs font-semibold mb-3">
+                    <i data-lucide="award" class="w-3.5 h-3.5"></i>
+                    <span>Principal Consultant</span>
+                  </div>
+                  <h3 class="text-2xl font-bold font-display tracking-tight text-white">Ramesh Madaan</h3>
+                  <p class="text-xs text-slate-300 font-medium mt-1">Growth Strategist & Sales Transformation Coach</p>
+                  <p class="text-[11px] text-amber-400/90 mt-0.5">MBA — Indian Institute of Management (IIM) Lucknow</p>
+                </div>
+              </div>
+
+              <!-- Snapshot Quote / Mission -->
+              <div class="mt-5 space-y-3">
+                <p class="text-xs italic text-slate-600 leading-relaxed border-l-2 border-amber-500 pl-3">
+                  "Most businesses don't fail for lack of great products. They hit ceilings because sales execution remains an art rather than an institutional, self-running science."
+                </p>
+
+                <div class="grid grid-cols-2 gap-3 pt-3 border-t border-slate-100 text-center">
+                  <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                    <span class="block text-xl font-extrabold text-navy-900 font-tabular">₹200+ Cr.</span>
+                    <span class="text-[11px] font-medium text-slate-500">Enterprise Revenue Built</span>
+                  </div>
+                  <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                    <span class="block text-xl font-extrabold text-amber-600 font-tabular">48%</span>
+                    <span class="text-[11px] font-medium text-slate-500">10-Year Branch CAGR</span>
+                  </div>
+                </div>
+
+                <div class="pt-2">
+                  <a href="./about.html" class="text-xs font-bold text-navy-800 hover:text-amber-600 flex items-center justify-center gap-1.5 transition-colors">
+                    <span>Read Ramesh Madaan's Executive Bio</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CREDIBILITY STRIP: 30+ Years of Enterprise Pedigree
+         ======================================================================== -->
+    <section class="py-12 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        
+        <p class="text-center text-xs font-bold uppercase tracking-wider text-slate-500 mb-8">
+          Backed by 30+ Years of Enterprise Leadership & Institutional Excellence
+        </p>
+
+        <!-- Enterprise Pedigree Badges / Monograms -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+          
+          <!-- Havells -->
+          <div class="flex flex-col items-center justify-center p-4 rounded-xl border border-slate-100 hover:border-slate-300 bg-slate-50/60 transition-colors group">
+            <span class="text-lg sm:text-xl font-black font-display tracking-tight text-slate-800 group-hover:text-navy-900">
+              HAVELLS
+            </span>
+            <span class="text-[11px] font-medium text-slate-500 mt-1">Consumer & Industrial Electricals</span>
+          </div>
+
+          <!-- Crompton Greaves -->
+          <div class="flex flex-col items-center justify-center p-4 rounded-xl border border-slate-100 hover:border-slate-300 bg-slate-50/60 transition-colors group">
+            <span class="text-lg sm:text-xl font-black font-display tracking-tight text-slate-800 group-hover:text-navy-900">
+              CROMPTON GREAVES
+            </span>
+            <span class="text-[11px] font-medium text-slate-500 mt-1">Market Leadership Turnaround</span>
+          </div>
+
+          <!-- Essar Steel -->
+          <div class="flex flex-col items-center justify-center p-4 rounded-xl border border-slate-100 hover:border-slate-300 bg-slate-50/60 transition-colors group">
+            <span class="text-lg sm:text-xl font-black font-display tracking-tight text-slate-800 group-hover:text-navy-900">
+              ESSAR STEEL
+            </span>
+            <span class="text-[11px] font-medium text-slate-500 mt-1">High-Value Industrial Contracts</span>
+          </div>
+
+          <!-- MBA IIM Lucknow -->
+          <div class="flex flex-col items-center justify-center p-4 rounded-xl border border-amber-200/80 hover:border-amber-400 bg-amber-50/40 transition-colors group">
+            <span class="text-base sm:text-lg font-black font-display tracking-tight text-navy-950 group-hover:text-amber-700">
+              IIM LUCKNOW
+            </span>
+            <span class="text-[11px] font-medium text-amber-700/80 mt-1">Executive Management Pedigree</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CORE VALUE PROP / PROBLEMS WE SOLVE: 3 Concrete Business Ceilings
+         ======================================================================== -->
+    <section class="py-20 bg-slate-50/60 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+          <p class="text-xs font-bold uppercase tracking-widest text-amber-600">The MSME & Enterprise Bottlenecks</p>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-navy-950 text-balance">
+            Why High-Potential Businesses Hit Growth Ceilings
+          </h2>
+          <p class="text-base text-slate-600 leading-relaxed text-balance">
+            Scaling from ₹10 Crore to ₹50 Crore, or ₹50 Crore to ₹200+ Crore, requires dismantling the exact habits that brought you here. We solve the three root operational breakdowns:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1: Stagnant Revenue -->
+          <div class="card-hover bg-white rounded-2xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-red-50 text-red-700 flex items-center justify-center border border-red-100">
+                <i data-lucide="trending-down" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold font-display text-navy-950">Stagnant Revenue Plateau</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Your company has plateaued at an annual turnover ceiling. Month-on-month pipeline predictability is low, forecasting is based on gut feel, and cash-flow is vulnerable to market fluctuations.
+              </p>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-slate-100 space-y-2">
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">The Solution We Deploy</span>
+              <p class="text-xs font-semibold text-navy-900">
+                Data-driven sales pipeline architecture with reliable conversion math and quarterly velocity reviews.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Underperforming Sales Teams -->
+          <div class="card-hover bg-white rounded-2xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center border border-amber-100">
+                <i data-lucide="users-round" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold font-display text-navy-950">Underperforming Sales Force</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Sales reps act like order-takers rather than revenue hunters. Incentive schemes are misaligned, CRM adoption is resisted, and founders remain dragged into closing every critical client deal.
+              </p>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-100 space-y-2">
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">The Solution We Deploy</span>
+              <p class="text-xs font-semibold text-navy-900">
+                KPI restructuring, behavior-anchored incentive models, and consultative negotiation training.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: Fragmented Market Reach -->
+          <div class="card-hover bg-white rounded-2xl p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-navy-50 text-navy-800 flex items-center justify-center border border-navy-100">
+                <i data-lucide="network" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold font-display text-navy-950">Fragmented Distribution Reach</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Distribution is restricted to local legacy pockets. Distributors demand credit without driving secondary sales volume, and entering new states or industrial sectors feels like an uphill battle.
+              </p>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-100 space-y-2">
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">The Solution We Deploy</span>
+              <p class="text-xs font-semibold text-navy-900">
+                Systematic dealer expansion frameworks, channel governance, and tier-1 distributor acquisition.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         THE PROVEN TRACK RECORD: Animated Metric Counters
+         ======================================================================== -->
+    <section id="track-record" class="py-20 bg-navy-950 text-white relative overflow-hidden">
+      <!-- Background glow -->
+      <div class="absolute -right-40 -top-40 w-96 h-96 bg-navy-800/40 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-40 -bottom-40 w-96 h-96 bg-amber-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+        
+        <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+          <p class="text-xs font-bold uppercase tracking-widest text-amber-400">Verifiable Execution Metrics</p>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white text-balance">
+            The Numbers Behind 30 Years of Transformation
+          </h2>
+          <p class="text-slate-300 text-base leading-relaxed text-balance">
+            Consultancy without hands-on P&L accountability is merely theory. Ramesh Madaan's strategic frameworks were battle-tested across India's most demanding industrial and consumer markets.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Metric 1: 48% CAGR -->
+          <div class="p-8 rounded-2xl bg-navy-900/80 border border-slate-800 flex flex-col items-center text-center space-y-3">
+            <span class="text-xs font-semibold tracking-wider text-amber-400 uppercase">Long-Term Compounding</span>
+            <div class="text-5xl sm:text-6xl font-extrabold font-display text-white font-tabular" 
+                 data-counter-target="48" 
+                 data-counter-suffix="%" 
+                 data-counter-duration="1800">
+              0%
+            </div>
+            <h4 class="text-lg font-bold text-white">Consistent 10-Year CAGR</h4>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-xs">
+              Achieved sustained 48% annual compound growth over a full decade as Branch Head at leading electrical & industrial conglomerates.
+            </p>
+          </div>
+
+          <!-- Metric 2: 29% Market Share -->
+          <div class="p-8 rounded-2xl bg-navy-900/80 border border-slate-800 flex flex-col items-center text-center space-y-3">
+            <span class="text-xs font-semibold tracking-wider text-amber-400 uppercase">Market Leadership</span>
+            <div class="text-5xl sm:text-6xl font-extrabold font-display text-amber-500 font-tabular" 
+                 data-counter-target="29" 
+                 data-counter-suffix="%" 
+                 data-counter-duration="1800">
+              0%
+            </div>
+            <h4 class="text-lg font-bold text-white">Market Share in Punjab</h4>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-xs">
+              Turned around the Fan Division from rank #5 to undisputed #1 position within a single operational year through dealer realignments.
+            </p>
+          </div>
+
+          <!-- Metric 3: ₹200 Cr. Scale -->
+          <div class="p-8 rounded-2xl bg-navy-900/80 border border-slate-800 flex flex-col items-center text-center space-y-3">
+            <span class="text-xs font-semibold tracking-wider text-amber-400 uppercase">PAN-India Scale</span>
+            <div class="text-5xl sm:text-6xl font-extrabold font-display text-white font-tabular" 
+                 data-counter-prefix="₹"
+                 data-counter-target="200" 
+                 data-counter-suffix=" Cr." 
+                 data-counter-duration="1800">
+              ₹0 Cr.
+            </div>
+            <h4 class="text-lg font-bold text-white">Industrial Business Scaled</h4>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-xs">
+              Directly managed and expanded PAN-India industrial business verticals to ₹200+ Crores through key enterprise accounts.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Adjacency Evidence Strip -->
+        <div class="mt-12 p-6 rounded-xl bg-navy-900/50 border border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-300">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+              <i data-lucide="shield-check" class="w-4 h-4"></i>
+            </div>
+            <p>
+              <strong class="text-white">Audited Methodology:</strong> Every engagement starts with a thorough 360-degree commercial diagnostic before committing to structural change.
+            </p>
+          </div>
+          <a href="./about.html" class="text-amber-400 font-bold hover:underline shrink-0">
+            View Career Timeline & Milestones →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         INTERACTIVE COMPONENT: "Calculate Your Sales Performance Gap" Mini-Widget
+         ======================================================================== -->
+    <section id="growth-assessment" class="py-20 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-8">
+        
+        <div class="text-center space-y-3 mb-12">
+          <div class="inline-flex items-center gap-2 text-xs font-bold text-amber-600 tracking-wider uppercase">
+            <i data-lucide="sliders" class="w-4 h-4"></i>
+            <span>Interactive Diagnostic Engine</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-navy-950 text-balance">
+            Calculate Your Sales Performance Gap
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+            Answer 3 quick operational questions to benchmark your current sales engine and receive an instant, tailored growth intervention roadmap.
+          </p>
+        </div>
+
+        <div id="growth-assessment-widget" class="bg-white rounded-2xl border border-slate-200 shadow-md p-6 sm:p-10 space-y-8">
+          
+          <!-- Question 1: Annual Revenue Scale -->
+          <div class="space-y-3">
+            <label for="assess-revenue" class="block text-sm font-bold text-navy-900">
+              01. What is your current annual revenue bracket?
+            </label>
+            <select id="assess-revenue" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm font-medium text-slate-800 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-navy-800 focus:border-transparent transition-all">
+              <option value="under-10">Under ₹10 Crore / Year (Early Scale)</option>
+              <option value="10-50" selected>₹10 Crore – ₹50 Crore / Year (High-Growth MSME)</option>
+              <option value="50-200">₹50 Crore – ₹200 Crore / Year (Mid-Market Enterprise)</option>
+              <option value="200+">₹200+ Crore / Year (Large Industrial / Distribution Group)</option>
+            </select>
+          </div>
+
+          <!-- Question 2: Primary Sales Bottleneck -->
+          <div class="space-y-3">
+            <label for="assess-bottleneck" class="block text-sm font-bold text-navy-900">
+              02. What is the single biggest friction capping your revenue?
+            </label>
+            <select id="assess-bottleneck" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm font-medium text-slate-800 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-navy-800 focus:border-transparent transition-all">
+              <option value="sales-team" selected>Underperforming sales team (lack of structured closing process & motivation)</option>
+              <option value="distribution">Channel & distribution saturation (struggling to expand dealer network to new states)</option>
+              <option value="founder-dependent">Founder-dependent sales (deals only close when leadership gets involved)</option>
+              <option value="lead-pipeline">Unpredictable pipeline (feast-or-famine quarterly revenue cycles)</option>
+            </select>
+          </div>
+
+          <!-- Question 3: Geographic Expansion Scope -->
+          <div class="space-y-3">
+            <label for="assess-market" class="block text-sm font-bold text-navy-900">
+              03. What is your primary Go-To-Market objective over the next 18 months?
+            </label>
+            <select id="assess-market" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm font-medium text-slate-800 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-navy-800 focus:border-transparent transition-all">
+              <option value="regional" selected>Expanding from single-state/regional presence to PAN-India footprint</option>
+              <option value="industrial">Transitioning from retail/OEM contract manufacturing to a recognized B2B brand</option>
+              <option value="governance">Institutionalizing systems so the company runs smoothly without the founder</option>
+              <option value="doubling">Doubling sales velocity and team revenue productivity per rep</option>
+            </select>
+          </div>
+
+          <!-- Calculate CTA Button -->
+          <div class="pt-4">
+            <button id="assess-submit-btn" type="button" class="w-full py-4 px-6 text-center font-bold text-white bg-navy-900 hover:bg-navy-800 active:bg-navy-950 rounded-xl shadow-md transition-all flex items-center justify-center gap-2">
+              <i data-lucide="sparkles" class="w-5 h-5 text-amber-400"></i>
+              <span>Generate My Tailored Growth Roadmap</span>
+            </button>
+          </div>
+
+          <!-- Tailored Result Card (Initially Hidden) -->
+          <div id="assessment-result" class="hidden mt-8 pt-8 border-t border-slate-200 space-y-6">
+            
+            <div class="p-6 rounded-2xl bg-amber-50/60 border border-amber-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Estimated Sales Performance Gap</span>
+                <div class="flex items-baseline gap-3 mt-1">
+                  <span id="result-gap-val" class="text-4xl sm:text-5xl font-extrabold font-display text-navy-950 font-tabular">38%</span>
+                  <span class="text-xs text-slate-600 font-medium max-w-xs">Revenue left on the table due to execution slippage & channel friction</span>
+                </div>
+              </div>
+              <div class="sm:text-right">
+                <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Prescribed Engagement</span>
+                <h4 id="result-strategy-title" class="text-lg font-bold text-navy-900 mt-0.5">Sales Transformation & Incentive Engine</h4>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <h4 class="text-sm font-bold text-navy-950 uppercase tracking-wider">Strategic Diagnosis & Recommended Next Steps:</h4>
+              <p id="result-strategy-desc" class="text-sm text-slate-700 leading-relaxed">
+                Your organization shows clear enterprise market potential, but execution velocity is constrained by unstructured pipeline management and misaligned incentives.
+              </p>
+              
+              <div class="space-y-2 pt-2 text-xs sm:text-sm text-slate-700">
+                <div class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span id="result-action-1">Restructure direct sales KPIs and performance-linked compensation models.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span id="result-action-2">Institute weekly pipeline governance cadences with clear closing milestones.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span id="result-action-3">Deploy CRM adoption playbooks to eliminate CRM friction for field executives.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Button to Populate and Scroll to Contact -->
+            <div class="pt-4">
+              <button id="apply-assessment-to-form" type="button" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-white bg-amber-600 hover:bg-amber-700 rounded-xl shadow transition-all">
+                <span>Book a Diagnostic Debrief with Ramesh</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CORE CONSULTING SERVICES OVERVIEW (3 Pillars)
+         ======================================================================== -->
+    <section class="py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+          <div class="space-y-3 max-w-2xl">
+            <p class="text-xs font-bold uppercase tracking-widest text-amber-600">Specialized Advisory</p>
+            <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-navy-950">
+              Three Pillars of Sustainable Growth
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Targeted, high-touch consulting blueprints engineered specifically for manufacturers, distribution houses, and B2B enterprises.
+            </p>
+          </div>
+          <a href="./services.html" class="inline-flex items-center gap-2 text-sm font-bold text-navy-800 hover:text-amber-600 transition-colors shrink-0">
+            <span>View Complete Service Specifications</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Pillar 1 -->
+          <div class="card-hover rounded-2xl border border-slate-200 p-8 bg-slate-50/50 flex flex-col justify-between">
+            <div class="space-y-4">
+              <span class="text-xs font-bold text-amber-600 tracking-wider">01. REVENUE ENGINE</span>
+              <h3 class="text-xl font-bold font-display text-navy-950">Sales Transformation Consulting</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Transform passive order-taking teams into high-performing commercial units. We overhaul reporting hierarchies, incentive structures, key account management, and CRM visibility.
+              </p>
+              <ul class="space-y-2 text-xs font-medium text-slate-700 pt-2">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-amber-600"></i>
+                  <span>Incentive scheme redesign linked to gross margin</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-amber-600"></i>
+                  <span>Pipeline hygiene and weekly governance rigor</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-amber-600"></i>
+                  <span>CRM implementation without field rep pushback</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-200">
+              <a href="./services.html#sales-transformation" class="text-xs font-bold text-navy-900 hover:text-amber-600 flex items-center gap-1">
+                <span>Learn More</span>
+                <i data-lucide="arrow-right" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="card-hover rounded-2xl border border-slate-200 p-8 bg-slate-50/50 flex flex-col justify-between">
+            <div class="space-y-4">
+              <span class="text-xs font-bold text-amber-600 tracking-wider">02. DISTRIBUTION & REACH</span>
+              <h3 class="text-xl font-bold font-display text-navy-950">Go-To-Market & Channel Expansion</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Expand beyond geographical comfort zones. We help you design dealer onboarding protocols, tier-1 distributor terms, and aggressive multi-territory market penetration strategies.
+              </p>
+              <ul class="space-y-2 text-xs font-medium text-slate-700 pt-2">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-amber-600"></i>
+                  <span>Dealer ROI & primary/secondary sales alignment</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-amber-600"></i>
+                  <span>Multi-state distribution rollout roadmaps</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-amber-600"></i>
+                  <span>Contract manufacturing to direct brand pivot</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-200">
+              <a href="./services.html#channel-expansion" class="text-xs font-bold text-navy-900 hover:text-amber-600 flex items-center gap-1">
+                <span>Learn More</span>
+                <i data-lucide="arrow-right" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="card-hover rounded-2xl border border-slate-200 p-8 bg-slate-50/50 flex flex-col justify-between">
+            <div class="space-y-4">
+              <span class="text-xs font-bold text-amber-600 tracking-wider">03. LEADERSHIP & CAPACITY</span>
+              <h3 class="text-xl font-bold font-display text-navy-950">Leadership & Capability Coaching</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Coaching MSME promoters, Managing Directors, and CXOs to transition from firefighting micro-managers to strategic visionary leaders of self-running commercial enterprises.
+              </p>
+              <ul class="space-y-2 text-xs font-medium text-slate-700 pt-2">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-amber-600"></i>
+                  <span>Promoter decoupling from day-to-day sales deals</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-amber-600"></i>
+                  <span>Second-line leadership empowerment & hiring</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-amber-600"></i>
+                  <span>Boardroom strategy & high-stakes negotiation skills</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-200">
+              <a href="./services.html#executive-coaching" class="text-xs font-bold text-navy-900 hover:text-amber-600 flex items-center gap-1">
+                <span>Learn More</span>
+                <i data-lucide="arrow-right" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         INTERACTIVE FAQ ACCORDION SECTION
+         ======================================================================== -->
+    <section class="py-20 bg-slate-50/70 border-b border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-8">
+        
+        <div class="text-center space-y-3 mb-14">
+          <p class="text-xs font-bold uppercase tracking-widest text-amber-600">Clear Answers</p>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-navy-950 text-balance">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Everything you need to know about partnering with Ramesh Madaan on an advisory or interim leadership basis.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <!-- Accordion Item 1 -->
+          <div class="accordion-item active bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm transition-colors">
+            <button type="button" class="accordion-button w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-navy-950 hover:text-navy-800 focus:outline-none" aria-expanded="true">
+              <span class="text-base sm:text-lg">What type of businesses get the highest ROI from this consultancy?</span>
+              <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="accordion-content px-6 pb-6 text-sm text-slate-600 leading-relaxed">
+              We primarily partner with MSMEs, mid-market manufacturers, industrial suppliers, electrical/engineering companies, and distribution businesses generating between ₹10 Crore and ₹200+ Crore in annual turnover. If your growth is currently constrained by lack of channel visibility, founder-dependency, or underperforming sales personnel, our intervention delivers measurable commercial breakthroughs.
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="accordion-item bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm transition-colors">
+            <button type="button" class="accordion-button w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-navy-950 hover:text-navy-800 focus:outline-none" aria-expanded="false">
+              <span class="text-base sm:text-lg">How is Ramesh Madaan different from conventional agency or strategy consultants?</span>
+              <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="accordion-content px-6 pb-6 text-sm text-slate-600 leading-relaxed">
+              Unlike generic consultants who deliver 80-page slide decks and walk away, Ramesh Madaan brings 30+ years of active P&L and on-ground commercial leadership (including Havells, Crompton Greaves, and Essar Steel). We work shoulder-to-shoulder with your promoters, sales leaders, and field teams to build, test, and institutionalize systems until they run reliably on their own.
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="accordion-item bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm transition-colors">
+            <button type="button" class="accordion-button w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-navy-950 hover:text-navy-800 focus:outline-none" aria-expanded="false">
+              <span class="text-base sm:text-lg">How long does a typical transformation engagement last?</span>
+              <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="accordion-content px-6 pb-6 text-sm text-slate-600 leading-relaxed">
+              Engagements typically span 6 to 12 months. Phase 1 (Weeks 1-4) is the Commercial & Sales Diagnostic Audit. Phase 2 (Months 2-3) implements new KPIs, GTM channel architectures, and incentives. Phase 3 (Months 4-12) enforces execution governance, dealer reviews, and leadership capability building.
+            </div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div class="accordion-item bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm transition-colors">
+            <button type="button" class="accordion-button w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-navy-950 hover:text-navy-800 focus:outline-none" aria-expanded="false">
+              <span class="text-base sm:text-lg">Can you help expand our distribution network into other Indian states?</span>
+              <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="accordion-content px-6 pb-6 text-sm text-slate-600 leading-relaxed">
+              Yes. Having scaled businesses PAN-India and taken the Crompton Greaves Fan Division from 5th to No.1 in Punjab with a 29% market share, Ramesh Madaan possesses deep relationships and proven channel blueprints to onboard tier-1 distributors, optimize credit cycles, and stimulate secondary retail pull.
+            </div>
+          </div>
+
+          <!-- Accordion Item 5 -->
+          <div class="accordion-item bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm transition-colors">
+            <button type="button" class="accordion-button w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-navy-950 hover:text-navy-800 focus:outline-none" aria-expanded="false">
+              <span class="text-base sm:text-lg">How do we initiate the advisory process?</span>
+              <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200"></i>
+            </button>
+            <div class="accordion-content px-6 pb-6 text-sm text-slate-600 leading-relaxed">
+              Start by submitting the Growth Consultation form below or using our interactive assessment tool. We will schedule a confidential, 30-minute Discovery Call to examine your revenue bottlenecks and determine whether there is mutual alignment for an advisory engagement.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         HIGH-CONVERTING CONTACT SECTION & EMBEDDED CONSULTATION FORM
+         ======================================================================== -->
+    <section id="contact-form-section" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Left Column: Direct Access Details & Authority -->
+          <div class="lg:col-span-5 space-y-6">
+            <p class="text-xs font-bold uppercase tracking-widest text-amber-600">Direct Principal Access</p>
+            <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-navy-950 leading-tight">
+              Ready to Build Your Growth Engine?
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Consulting engagements are strictly selective to ensure concentrated, high-impact focus for each client organization. Schedule your preliminary diagnostic conversation directly with Ramesh Madaan.
+            </p>
+
+            <!-- Direct Contact List -->
+            <div class="space-y-4 pt-4">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-lg bg-navy-50 text-navy-800 flex items-center justify-center shrink-0 border border-navy-100">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="block text-xs font-semibold text-slate-500">Email Address</span>
+                  <a href="mailto:ramesh.madaan@yahoo.com" class="text-sm font-bold text-navy-900 hover:text-amber-600 transition-colors">
+                    ramesh.madaan@yahoo.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-lg bg-navy-50 text-navy-800 flex items-center justify-center shrink-0 border border-navy-100">
+                  <i data-lucide="phone-call" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="block text-xs font-semibold text-slate-500">Direct Telephone / WhatsApp</span>
+                  <a href="tel:+919780022101" class="text-sm font-bold text-navy-900 hover:text-amber-600 transition-colors">
+                    +91 97800 22101
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-lg bg-navy-50 text-navy-800 flex items-center justify-center shrink-0 border border-navy-100">
+                  <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="block text-xs font-semibold text-slate-500">Professional Network</span>
+                  <a href="https://linkedin.com/in/rameshmadaan" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-navy-900 hover:text-amber-600 transition-colors">
+                    linkedin.com/in/rameshmadaan
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-lg bg-navy-50 text-navy-800 flex items-center justify-center shrink-0 border border-navy-100">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="block text-xs font-semibold text-slate-500">Base of Operations</span>
+                  <span class="text-sm font-bold text-slate-800">
+                    Chandigarh & Delhi NCR | PAN-India Advisory Deployments
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Discrete Guarantee -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600 flex items-center gap-3">
+              <i data-lucide="lock" class="w-5 h-5 text-amber-600 shrink-0"></i>
+              <span>All corporate diagnostic information is treated with strict professional confidentiality (NDA-standard).</span>
+            </div>
+
+          </div>
+
+          <!-- Right Column: High-Converting Consultation Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-lg">
+              
+              <div class="border-b border-slate-100 pb-4 mb-6">
+                <h3 class="text-xl font-bold font-display text-navy-950">Schedule Strategic Diagnostic Call</h3>
+                <p class="text-xs text-slate-500 mt-1">Please provide your organization's context. Ramesh Madaan will review within 24 business hours.</p>
+              </div>
+
+              <form id="growth-consultation-form" class="space-y-5" novalidate>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <!-- Name -->
+                  <div>
+                    <label for="contact-name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      Your Full Name <span class="text-red-500">*</span>
+                    </label>
+                    <input type="text" id="contact-name" name="name" required placeholder="e.g. Rajesh Singhania" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800 transition-all placeholder:text-slate-400" />
+                  </div>
+
+                  <!-- Company -->
+                  <div>
+                    <label for="contact-company" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      Company / Organization <span class="text-red-500">*</span>
+                    </label>
+                    <input type="text" id="contact-company" name="company" required placeholder="e.g. Apex Engineering Ltd." class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800 transition-all placeholder:text-slate-400" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <!-- Email -->
+                  <div>
+                    <label for="contact-email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      Official Business Email <span class="text-red-500">*</span>
+                    </label>
+                    <input type="email" id="contact-email" name="email" required placeholder="rajesh@apexeng.com" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800 transition-all placeholder:text-slate-400" />
+                  </div>
+
+                  <!-- Phone / WhatsApp -->
+                  <div>
+                    <label for="contact-phone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      Direct Mobile / WhatsApp <span class="text-red-500">*</span>
+                    </label>
+                    <input type="tel" id="contact-phone" name="phone" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800 transition-all placeholder:text-slate-400" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <!-- Revenue Bracket -->
+                  <div>
+                    <label for="contact-revenue" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      Current Annual Revenue
+                    </label>
+                    <select id="contact-revenue" name="revenue" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-navy-800 transition-all">
+                      <option value="Under ₹10 Cr">Under ₹10 Crore / Year</option>
+                      <option value="₹10 - 50 Cr" selected>₹10 - ₹50 Crore / Year</option>
+                      <option value="₹50 - 200 Cr">₹50 - ₹200 Crore / Year</option>
+                      <option value="₹200+ Cr">₹200+ Crore / Year</option>
+                    </select>
+                  </div>
+
+                  <!-- Primary Challenge -->
+                  <div>
+                    <label for="contact-challenge" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      Primary Growth Focus
+                    </label>
+                    <input type="text" id="contact-challenge" name="challenge" placeholder="e.g. Sales Team KPIs, Channel Expansion" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800 transition-all placeholder:text-slate-400" />
+                  </div>
+                </div>
+
+                <!-- Strategic Context / Message -->
+                <div>
+                  <label for="contact-message" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                    Brief Overview of Current Bottlenecks
+                  </label>
+                  <textarea id="contact-message" name="message" rows="3" placeholder="Tell us about your distribution footprint, team size, or target expansion goals..." class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800 transition-all placeholder:text-slate-400"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                  <button type="submit" id="contact-submit-btn" class="w-full py-3.5 px-6 text-sm font-bold text-white bg-amber-600 hover:bg-amber-700 active:bg-amber-800 rounded-xl shadow-md transition-all flex items-center justify-center gap-2">
+                    <i data-lucide="send" class="w-4 h-4"></i>
+                    <span>Submit & Request Strategic Consultation</span>
+                  </button>
+                  <p class="text-center text-[11px] text-slate-500 mt-2">
+                    Directly drafts an email to Ramesh Madaan (<span class="font-medium text-slate-700">ramesh.madaan@yahoo.com</span>) with confirmation copy.
+                  </p>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       QUIET, AUTHORITATIVE FOOTER
+       ======================================================================== -->
+  <footer class="bg-navy-950 text-slate-400 border-t border-slate-800 py-16 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Brand & Credo -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-navy-900 text-amber-500 font-display font-extrabold text-lg flex items-center justify-center border border-navy-800">
+              RM
+            </div>
+            <span class="text-lg font-bold text-white tracking-tight">Ramesh Madaan</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            High-impact growth advisory, sales transformation, and executive coaching for MSMEs and enterprise leaders across India. Proven playbooks grounded in 30+ years of enterprise P&L execution.
+          </p>
+          <div class="text-xs text-amber-400/90 font-medium">
+            Alumnus, Indian Institute of Management (IIM) Lucknow
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200">Consultancy Architecture</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="./about.html" class="hover:text-white transition-colors">Executive Bio & Track Record</a></li>
+            <li><a href="./services.html#sales-transformation" class="hover:text-white transition-colors">Sales Transformation Consulting</a></li>
+            <li><a href="./services.html#channel-expansion" class="hover:text-white transition-colors">Go-To-Market & Channel Expansion</a></li>
+            <li><a href="./services.html#executive-coaching" class="hover:text-white transition-colors">Leadership & Capability Coaching</a></li>
+            <li><a href="./index.html#growth-assessment" class="hover:text-white transition-colors">Sales Performance Gap Calculator</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact Details -->
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200">Contact Ramesh Madaan</h4>
+          <p class="text-xs leading-relaxed">
+            Direct Email: <a href="mailto:ramesh.madaan@yahoo.com" class="text-white hover:text-amber-400 font-medium transition-colors">ramesh.madaan@yahoo.com</a><br />
+            Direct Phone: <a href="tel:+919780022101" class="text-white hover:text-amber-400 font-medium transition-colors">+91 97800 22101</a><br />
+            LinkedIn: <a href="https://linkedin.com/in/rameshmadaan" target="_blank" rel="noopener noreferrer" class="text-white hover:text-amber-400 font-medium transition-colors">linkedin.com/in/rameshmadaan</a>
+          </p>
+          <p class="text-[11px] text-slate-500">
+            Offices & Engagement Hub: Chandigarh & Delhi NCR, India.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© 2026 Ramesh Madaan. All rights reserved. Strategic Business Consulting.</p>
+        <p>Built for elite MSME & mid-market enterprise acceleration.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       SUCCESS MODAL: High-Converting Mailto Confirmation & Summary
+       ======================================================================== -->
+  <div id="success-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/70 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-panel bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative">
+      
+      <!-- Close Button -->
+      <button id="modal-close-btn" type="button" aria-label="Close Modal" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1 rounded-lg">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="text-center space-y-3">
+        <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 mx-auto flex items-center justify-center shadow-inner">
+          <i data-lucide="check" class="w-8 h-8"></i>
+        </div>
+        <h3 id="modal-title" class="text-2xl font-bold font-display text-navy-950">
+          Inquiry Successfully Drafted!
+        </h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Thank you, <span id="modal-client-name" class="font-semibold text-navy-900">Partner</span>. Your strategic consultation brief has been generated.
+        </p>
+      </div>
+
+      <div class="mt-6 p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 space-y-2">
+        <p class="font-bold text-navy-900">Your email client should launch automatically.</p>
+        <p>If it didn't open, click the button below to launch your email app or copy the inquiry details to send via WhatsApp / direct message:</p>
+      </div>
+
+      <div class="mt-6 space-y-3">
+        <button id="modal-launch-mail" type="button" class="w-full py-3 px-4 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-sm shadow transition-colors flex items-center justify-center gap-2">
+          <i data-lucide="external-link" class="w-4 h-4"></i>
+          <span>Launch Email Client (ramesh.madaan@yahoo.com)</span>
+        </button>
+
+        <button id="modal-copy-summary" type="button" class="w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-sm transition-colors flex items-center justify-center gap-2">
+          <i data-lucide="copy" class="w-4 h-4"></i>
+          <span>Copy Inquiry Summary</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       TOAST NOTIFICATION
+       ======================================================================== -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 max-w-sm px-5 py-3.5 rounded-xl shadow-2xl text-white text-xs font-semibold flex items-center gap-3 bg-slate-900 border border-slate-700">
+    <i data-lucide="info" class="w-4 h-4 text-amber-400 shrink-0"></i>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./main.js"></script>
+</body>
+</html>
